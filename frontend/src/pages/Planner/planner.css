@@ -1,0 +1,105 @@
+/* Styling for the whole Planner component */
+.Planner {
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Set height to full viewport height */
+    display: flex;
+    flex-direction: column; /* Align children in a column */
+    position: relative; /* Add position relative to allow absolute positioning of the modal */
+}
+
+/* Styling for the heading */
+.Planner h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Styling for the FullCalendar container */
+.Planner .fc {
+    width: 100%; 
+    height: 100%; 
+}
+
+/* Styling for the modal */
+.Planner .Modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute; /* Change to absolute positioning */
+    bottom: 0; /* Position at the bottom of the Planner container */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Make modal full width */
+}
+
+/* Styling for the form inside the modal */
+.Planner form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Planner form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.Planner form input[type="date"],
+.Planner form input[type="time"],
+.Planner form input[type="text"],
+.Planner form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+.Planner form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.Planner form button[type="button"] {
+    background-color: #dc3545;
+}
+
+.Planner form button[type="submit"]:hover,
+.Planner form button[type="button"]:hover {
+    opacity: 0.8;
+}
+
+[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+}
+
+[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+    display: none;
+}
+
+[data-tooltip]:hover::before {
+    display: block;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .Planner .fc {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,47 @@
+.exercise-list-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+}
+
+.exercise-list-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.exercise-list-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.exercise-list-container .exercise-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.exercise-list-container .exercise-item p {
+  margin: 5px 0;
+}
+
+.exercise-list-container .exercise-item p:first-child {
+  font-weight: bold;
+}
+
+.exercise-list-container .delete-button {
+  background-color: #ff5757;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.exercise-list-container .delete-button:hover {
+  background-color: #4ca5ff;
+}

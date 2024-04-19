@@ -1,0 +1,49 @@
+.create-exercise-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+  }
+  
+  .create-exercise-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .create-exercise-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-exercise-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .create-exercise-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgb(1, 151, 151);
+    color: white;
+
+  }
+  
+  .create-exercise-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5757;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .create-exercise-container button:hover {
+    background-color: #4ca5ff;
+  }
+  
