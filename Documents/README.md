@@ -139,7 +139,7 @@ To get a local copy up and running follow these simple example steps.
    <br>
 
    ```sh
-   git clone https://github.com/institutedata/capstone-HashleyB.git
+   git clone https://github.com/HashleyB/Capstone-project.git
    ```
 
 ####  2.Install Dependencies:
